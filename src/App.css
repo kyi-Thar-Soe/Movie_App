@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Geologica&family=Poppins:wght@500&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.control-btn button {
+  background-color: gray;
+  opacity: 0.3;
+  border: 2px solid rgba(17, 17, 17, 0.3);
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  margin-top: 100px;
+}
+.next-btn {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    z-index: 99;
+  }
+.prev-btn {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    z-index: 99;
+  }
+/*UpComing Movies*/
+.upcome{
+  position: relative;
+  margin-top: 34rem;
+}
+.container{
+  position: absolute;
+}
+.upcome .container{
+  margin-left: 4rem;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h1 {
+  font-weight: 700;
+  margin: 30px 0;
+  color: whitesmoke;
+  font-size: 30px;
+  background-image: url('./assets/texure.jpg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+.heading a {
+  color: #E6010A;
+}
+/*Popular Movie*/
+.popular{
+  margin-top: 65rem;
+}
+.popular .popular-container{
+  margin-left: 70px;
+  margin-right: 85px;
+}
+/*Toprated movies and now playing*/
+.toprated,.nowplaying{
+  margin-top: 30px;
+}
+.toprated .toprated-container,.nowplaying .nowplaying-container{
+  margin-left: 70px;
+  margin-right: 85px;
+}
+@media screen and (max-width: 768px){
+  .upcome .container{
+    margin-top: -20px;
+    margin-left: 0rem;
+  }
+  .heading h1{
+    font-size: 20px;
+  }
+  .heading a{
+    font-size: 14px;
+    margin-right: 1rem;
+  }
+  .popular{
+    margin-top: 55rem;
+    margin-left: -3.5rem;
+    margin-right: -4rem;
+  }
+  .toprated,.nowplaying{
+    margin-left: -3.5rem;
+    margin-right: -4rem;
+  }
+}

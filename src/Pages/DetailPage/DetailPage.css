@@ -1,0 +1,100 @@
+.detail-div{
+    width: 100vw;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    border: none;
+    background-color: transparent;
+}
+.detail-div img{
+    width: 100%;
+    border-radius: 5px;
+}
+.detail-body{
+    color: whitesmoke;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 800;
+    background-image: url('../../assets/texure.jpg');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    margin-left: -5px;
+}
+.detail-body span{
+    color: #E6010A;
+}
+.transition-effect {
+    opacity: 1;
+    transform: translateY(-20%) perspective(31.25em); /* Move the element above its original position */
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  }
+  
+.detail-loaded {
+    opacity: 0;
+    transform: translateY(0) perspective(31.25em); 
+}
+.btn-div{
+    display: flex;
+    align-items: center;
+}
+.back{
+    background-color: transparent;
+    color: #E6010A;
+    border: 1px solid whitesmoke;
+    padding: 7px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.video-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.video-title{
+    position: absolute;
+    color: #303030;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+.video-btn{
+    margin-left: 28rem;
+}
+@media screen and (max-width: 768px){
+    .modal-content{
+        width: 19rem;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .detail-div{
+        margin-top: 14rem;
+        margin-left: 2rem;
+    }
+    .detail-div img{
+        width: 50%;
+        margin-left: 4rem;
+    }
+    .detail-body p{
+        display: block;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .back{
+        font-size: 14px;
+        padding: 4px 15px;
+    }
+    .video-title{
+        display: inline;
+    }
+    .video-btn{
+        margin-left: 16rem;
+    }
+}
